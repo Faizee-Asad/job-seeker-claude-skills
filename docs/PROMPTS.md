@@ -35,3 +35,9 @@
 ```text
 /job-seeker-helper Write a follow-up email after my interview. Interviewer: [NAME]. Topics we discussed: [TOPICS]. Tone: warm and concise.
 ```
+
+## Tracker
+
+```text
+/job-application-tracker Create a job tracker and add this job: [COMPANY], [ROLE], [STATUS], [NEXT ACTION DATE].
+```

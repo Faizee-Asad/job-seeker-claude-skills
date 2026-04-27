@@ -1,0 +1,11 @@
+[project]
+name = "job-seeker-claude-skills"
+version = "0.2.0"
+description = "Claude Skills for ethical resume tailoring, cover letters, interview prep, and job tracking."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Asad Faizee" }]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

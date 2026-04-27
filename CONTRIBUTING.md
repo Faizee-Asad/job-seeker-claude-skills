@@ -9,6 +9,7 @@ Thanks for improving Job Seeker Claude Skills.
 3. Keep `SKILL.md` files short and route detailed guidance into resources.
 4. Prefer plain Markdown templates and standard-library Python scripts.
 5. Add examples for any new workflow.
+6. Avoid including real personal data in examples, tests, or screenshots.
 
 ## Local validation
 
@@ -19,7 +20,8 @@ python -m unittest discover -s tests
 
 ## Pull request checklist
 
-- [ ] All skills have valid YAML-ish frontmatter with `name` and `description`.
+- [ ] All skills have valid frontmatter with `name` and `description`.
 - [ ] New instructions preserve truth and candidate consent.
 - [ ] Any scripts work without network access.
 - [ ] Examples avoid real personal data.
+- [ ] Docs are updated when behavior changes.

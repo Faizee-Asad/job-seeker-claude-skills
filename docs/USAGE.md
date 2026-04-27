@@ -13,9 +13,10 @@
 ## Inputs Claude should request when missing
 
 - Target role and company.
-- Job description or posting link text.
+- Job description or pasted posting text.
 - Current resume/CV.
-- Candidate's target seniority and location/work authorization constraints.
+- Candidate's target seniority.
+- Location, remote preference, and work authorization constraints if relevant.
 - Tone preference for cover letter: concise, warm, confident, executive, academic, startup, etc.
 
 Claude should not block if some inputs are unavailable. It should proceed with a best-effort packet and mark assumptions clearly.
@@ -24,31 +25,37 @@ Claude should not block if some inputs are unavailable. It should proceed with a
 
 ### Fast mode
 
-Produces a short keyword audit, resume summary rewrite, 5-8 bullet rewrites, and a cover letter draft.
+Produces:
+
+- short keyword audit
+- resume summary rewrite
+- 5 to 8 bullet rewrites
+- cover letter draft
 
 ### Full packet mode
 
-Produces a complete application package:
+Produces:
 
 - ATS keyword audit
-- Role match matrix
-- Tailored resume
-- Cover letter
-- Recruiter DM
-- Interview prep pack
-- Follow-up emails
-- Job tracker row
+- role match matrix
+- tailored resume
+- cover letter
+- recruiter DM
+- interview prep pack
+- follow-up emails
+- job tracker row
+- combined application packet
 
 ### Interview mode
 
 Produces:
 
-- Recruiter screen script
-- Hiring manager interview prep
-- Technical/portfolio interview prep
-- Behavioral STAR story bank
-- Questions to ask interviewers
-- Salary and negotiation talking points
+- recruiter screen script
+- hiring manager interview prep
+- technical or portfolio interview prep
+- behavioral STAR story bank
+- questions to ask interviewers
+- salary and negotiation talking points
 
 ## Example commands
 
@@ -62,4 +69,8 @@ Produces:
 
 ```text
 /interview-coach Prepare me for the Meta data analyst role using jd.md and my resume.md
+```
+
+```text
+/job-application-tracker Add this job: ExampleCo, Data Analyst, applied today, follow up in 7 days
 ```
